@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">        
         <title>Contact</title>
         <link rel="shortcut icon" href="assets/images/MichaelHrivnak.png">
     </head>
-    <body>
-        <section class="header-section">
-            <div class="header control-width">
-                <label class="name">Michael Hrivnak</label>
-                <ul ID="menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a class="menu-active" href="#">Contact</a></li>
+    <body class="d-flex flex-column h-100">
+        <nav class="navbar nav navbar-light bg-white">
+            <div class="container">           
+                <label class="navbar-brand bg-info text-white font-weight-bold">Michael Hrivnak</label>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item text-white"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item text-white"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item text-white"><a class="nav-link active" href="#">Contact</a></li>
                 </ul>
             </div>
-        </section>  
-        <section class="control-width">
+        </nav>
+        <main class="container flex-shrink-0" role="main">
             <div class="content-body">
                 <h2>Contact</h2>
                 <hr>
                 <form>
-                    <div class="input">
-                        <label class="input-title">Name</label>
-                        <input type="text" name="name" value="John Doe" onfocus="this.value=''">
+                    <div class="form-group">
+                      <label for="inputName">Name</label>
+                      <input type="text" class="form-control" id="inputName" placeholder="eg. John Doe">
                     </div>
-                    <div class="input">
-                        <label class="input-title">Email</label>
-                        <input type="email" name="email" value="example@domain.com" onfocus="this.value=''">
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="name@domain.com">
                     </div>
-                    <div class="input">
-                        <label class="input-title">Message</label>
-                        <textarea id="messageBox" name="message" onfocus="this.value=''"></textarea>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea type="text" class="form-control" style="height:100px;" id="inputMessage"></textarea> 
                     </div>
-                    <input type="submit" class="btn submit" value="Submit">
-                </form>
+                                 
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
             </div>            
-        </section>
+        </main>
         <!--Footer-->
-        <section class="sticky-footer">
-            <small>Copyright &copy; 2019 Michael Hrivnak</small>
-        </section>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container text-center">
+                <small>Copyright &copy; 2019 Michael Hrivnak</small>
+            </div>
+        </footer>
     </body>
 </html>

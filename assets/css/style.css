@@ -28,6 +28,10 @@ body{
     padding: 20px 20px;
     white-space: nowrap;
 }
+ul{
+    list-style-type:none;
+    padding-inline-start: 0;
+}
 
 .nav-item:hover{
     background-color: #4aaaa5;
@@ -44,6 +48,9 @@ body{
     align-self:center;    
     padding: 30px 20px;
     
+}
+.navbar>.container{
+    align-items:flex-end;
 }
 .nav{
     align-content: flex-end;
@@ -68,9 +75,7 @@ p{
     padding: 5px;
     line-height:1.5;
 }
-img{
-    padding-right: 5px;
-}
+
 hr{
     background-color: darkgrey;
     color: darkgrey;
@@ -80,20 +85,9 @@ h2{
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.sticky-footer{
-    position: fixed;
-    width:100%;
-    text-align:center;
-    padding:10px 0;    
-    height:20px;
-    border-top: 8px solid #4aaaa5;    
-    background-color:#666666;
-    color:#ffffff;
-    top: calc(100% - 48px);
-    
-}
+
 .profile-pic{
-    width: 150px;   
+    width: 200px;   
     margin-right: 10px;
 }
 .right{
@@ -140,20 +134,13 @@ input[type=submit]:hover{
 }
 
 /*portfolio*/
-#portfolio-items{
-    display:flex;
-    flex-wrap: wrap;
-}
 
-.portfolio-image{
-    display: flex;    
-    justify-items: center;
-    border: 2px solid #666666;
-    display: flex;
-    width: 266.6667px;
-    height: 200px;
-    background-color: grey;
-    margin: 0 25px 40px 0;
+
+.portfolio-image{     
+    border: 2px solid #666666;     
+    width: 100%;
+    height:auto;
+    background-color: grey;   
     box-shadow: -2px -2px 2px 2px rgb(162,162,162,0.3);
     
 }
@@ -163,11 +150,14 @@ input[type=submit]:hover{
 }
 
 .portfolio-name{
+    position: absolute;
+    bottom:10%;
+    left:2.7%;
     text-decoration: none;
     align-self: flex-end;
     text-align: center;
     white-space: nowrap;
-    width: 100%;
+    width: 94.4%;
     color: #ffffff;
     padding: 15px 0;
     margin-bottom: 15px;
@@ -177,22 +167,4 @@ input[type=submit]:hover{
 .portfolio-name:hover{
     font-size: 20px;
     max-width: unset;    
-}
-#portfolio-item1{
-    background-image: url("../images/portfolio1.jfif");
-}
-
-#portfolio-item2{
-    background-image: url("../images/portfolio2.jfif");
-}
-
-#portfolio-item3{
-    background-image: url("../images/portfolio3.jfif");
-}
-
-#portfolio-item4{
-    background-image: url("../images/portfolio4.jfif");
-}
-#portfolio-item5{
-    background-image: url("../images/portfolio5.jfif");
 }
